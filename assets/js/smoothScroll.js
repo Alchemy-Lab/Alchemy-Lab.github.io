@@ -1,4 +1,4 @@
-document.querySelectorAll('.nav__item a[href^="#"]').forEach((trigger) => {
+document.querySelectorAll('.nav-item a[href^="#"]').forEach((trigger) => {
   trigger.onclick = function (e) {
     e.preventDefault();
     let hash = this.getAttribute("href");
