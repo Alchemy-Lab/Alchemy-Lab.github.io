@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+  scroll-padding-top: calc(4.5rem - 1px);
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
 .figure-caption {
   color: #eeeeee;
 }
@@ -49,11 +56,6 @@ p.lead.text-justify {
     #b63273,
     #2882c5
   );
-  /* outline: 20px solid var(--green); */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  /* background: #8abbeb; */
 }
 
 .bg-green-yellow {
@@ -122,27 +124,6 @@ a.privacy {
   width: 15rem;
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
-}
-
-html {
-  height: 100%;
-  scroll-padding-top: calc(4.5rem - 1px);
-  --scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}
-
 .page-section {
   padding: 6rem 0 0 0;
 }
@@ -181,13 +162,6 @@ html {
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
-}
-
-@media (min-width: 992px) {
-  .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
 }
 
 .portfolio .portfolio-item {
@@ -229,12 +203,6 @@ html {
 .bi-zoom-in::before {
   font-size: 2.5em;
 }
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
 
 .footer {
   padding-top: 5rem;
@@ -245,4 +213,26 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
 }
