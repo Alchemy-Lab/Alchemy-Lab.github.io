@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+#counterBox {
+  width: 600px;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 2rem;
+  color: green;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#counterBox h1 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+#counter {
+  font-size: 3rem;
+  margin: 2rem auto 1rem auto;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  background: #f3f0f1;
+  position: relative;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+}
+
+.button span,
+#step {
+  line-height: 50px;
+  color: green;
+  font-size: 32px;
+  font-weight: semibold;
+  text-align: center;
+}
+
+#step {
+  border-style: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  opacity: 1;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#reset {
+  width: 200px;
+  margin: 2rem auto;
+}
+
+#reset span {
+  font-size: 1.2rem;
+  color: red;
+}
+
+#stepText {
+  font-size: 1rem;
+  color: #999;
+}
