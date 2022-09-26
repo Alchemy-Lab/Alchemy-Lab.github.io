@@ -40,9 +40,9 @@ document.body.insertAdjacentElement("afterbegin", counterBox);
 counterBox.appendChild(title);
 counterBox.appendChild(counter);
 counterBox.appendChild(buttonContainer);
-buttonContainer.appendChild(plusButton);
-buttonContainer.appendChild(stepBox);
 buttonContainer.appendChild(minusButton);
+buttonContainer.appendChild(stepBox);
+buttonContainer.appendChild(plusButton);
 counterBox.appendChild(stepText);
 counterBox.appendChild(reset);
 
